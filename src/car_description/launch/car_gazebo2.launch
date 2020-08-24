@@ -15,6 +15,6 @@
 
   <rosparam command="load" file="$(find car_description)/config/diff_drive_controller.yaml" ns="/car" />
     <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/car" 
-      args="diff_drive_controller" />
+      args="diff_drive_controller"/>
 
 </launch>
