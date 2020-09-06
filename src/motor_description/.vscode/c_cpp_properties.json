@@ -16,6 +16,10 @@
                 "/home/shoma/arm_ws/src/rosserial/rosserial_server/include/**",
                 "/home/shoma/arm_ws/src/rosserial/rosserial_test/include/**",
                 "/home/shoma/catkin_ws/src/toragi_ros_tutorial/toragi_pkg1/include/**",
+                "/home/shoma/Documents/arduino-1.8.13/hardware/tools/avr/include/**",
+                "/home/shoma/Documents/arduino-1.8.13/hardware/arduino/avr/**",
+                "/home/shoma/Documents/ODrive-master/Arduino/ODriveArduino/**",
+                "/home/shoma/Documents/arduino-1.8.13/tools/**",
                 "/usr/include/**"
             ],
             "name": "ROS",
