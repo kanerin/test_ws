@@ -348,6 +348,21 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+motor_description/CMakeFiles/odrive_cmd_pub.dir/rule:
+	cd /home/shoma/test_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_description/CMakeFiles/odrive_cmd_pub.dir/rule
+.PHONY : motor_description/CMakeFiles/odrive_cmd_pub.dir/rule
+
+# Convenience name for target.
+odrive_cmd_pub: motor_description/CMakeFiles/odrive_cmd_pub.dir/rule
+
+.PHONY : odrive_cmd_pub
+
+# fast build rule for target.
+odrive_cmd_pub/fast:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/build
+.PHONY : odrive_cmd_pub/fast
+
+# Convenience name for target.
 motor_description/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
 	cd /home/shoma/test_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_description/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : motor_description/CMakeFiles/roscpp_generate_messages_eus.dir/rule
@@ -434,6 +449,33 @@ src/joint_states_subscriber.cpp.s:
 	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/joint_states_sub.dir/build.make motor_description/CMakeFiles/joint_states_sub.dir/src/joint_states_subscriber.cpp.s
 .PHONY : src/joint_states_subscriber.cpp.s
 
+src/odrive_cmd_pub.o: src/odrive_cmd_pub.cpp.o
+
+.PHONY : src/odrive_cmd_pub.o
+
+# target to build an object file
+src/odrive_cmd_pub.cpp.o:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/src/odrive_cmd_pub.cpp.o
+.PHONY : src/odrive_cmd_pub.cpp.o
+
+src/odrive_cmd_pub.i: src/odrive_cmd_pub.cpp.i
+
+.PHONY : src/odrive_cmd_pub.i
+
+# target to preprocess a source file
+src/odrive_cmd_pub.cpp.i:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/src/odrive_cmd_pub.cpp.i
+.PHONY : src/odrive_cmd_pub.cpp.i
+
+src/odrive_cmd_pub.s: src/odrive_cmd_pub.cpp.s
+
+.PHONY : src/odrive_cmd_pub.s
+
+# target to generate assembly for a file
+src/odrive_cmd_pub.cpp.s:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/src/odrive_cmd_pub.cpp.s
+.PHONY : src/odrive_cmd_pub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -459,6 +501,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... odrive_cmd_pub"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... joint_states_sub"
 	@echo "... roscpp_generate_messages_nodejs"
@@ -466,6 +509,9 @@ help:
 	@echo "... src/joint_states_subscriber.o"
 	@echo "... src/joint_states_subscriber.i"
 	@echo "... src/joint_states_subscriber.s"
+	@echo "... src/odrive_cmd_pub.o"
+	@echo "... src/odrive_cmd_pub.i"
+	@echo "... src/odrive_cmd_pub.s"
 .PHONY : help
 
 

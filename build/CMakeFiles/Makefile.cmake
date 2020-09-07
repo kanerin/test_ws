@@ -239,6 +239,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "motor_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake"
   "motor_description/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "motor_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
+  "motor_description/CMakeFiles/odrive_cmd_pub.dir/DependInfo.cmake"
   "motor_description/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake"
   "motor_description/CMakeFiles/joint_states_sub.dir/DependInfo.cmake"
   "motor_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"

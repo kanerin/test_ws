@@ -134,7 +134,8 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/motor_description_node.cpp)
- add_executable(joint_states_sub src/joint_states_subscriber.cpp)
+add_executable(joint_states_sub src/joint_states_subscriber.cpp)
+add_executable(odrive_cmd_pub src/odrive_cmd_pub.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -151,6 +152,7 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(joint_states_sub  ${catkin_LIBRARIES} )
+target_link_libraries(odrive_cmd_pub ${catkin_LIBRARIES} )
 
 #############
 ## Install ##

@@ -408,6 +408,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory motor_description
 
 # Convenience name for "all" pass in the directory.
+motor_description/all: motor_description/CMakeFiles/odrive_cmd_pub.dir/all
 motor_description/all: motor_description/CMakeFiles/joint_states_sub.dir/all
 
 .PHONY : motor_description/all
@@ -425,6 +426,7 @@ motor_description/clean: motor_description/CMakeFiles/rosgraph_msgs_generate_mes
 motor_description/clean: motor_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 motor_description/clean: motor_description/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 motor_description/clean: motor_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+motor_description/clean: motor_description/CMakeFiles/odrive_cmd_pub.dir/clean
 motor_description/clean: motor_description/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 motor_description/clean: motor_description/CMakeFiles/joint_states_sub.dir/clean
 motor_description/clean: motor_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
@@ -818,6 +820,43 @@ motor_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
 
 # clean rule for target.
 clean: motor_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target motor_description/CMakeFiles/odrive_cmd_pub.dir
+
+# All Build rule for target.
+motor_description/CMakeFiles/odrive_cmd_pub.dir/all:
+	$(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/depend
+	$(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shoma/test_ws/build/CMakeFiles --progress-num=14,15 "Built target odrive_cmd_pub"
+.PHONY : motor_description/CMakeFiles/odrive_cmd_pub.dir/all
+
+# Include target in all.
+all: motor_description/CMakeFiles/odrive_cmd_pub.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+motor_description/CMakeFiles/odrive_cmd_pub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shoma/test_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 motor_description/CMakeFiles/odrive_cmd_pub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shoma/test_ws/build/CMakeFiles 0
+.PHONY : motor_description/CMakeFiles/odrive_cmd_pub.dir/rule
+
+# Convenience name for target.
+odrive_cmd_pub: motor_description/CMakeFiles/odrive_cmd_pub.dir/rule
+
+.PHONY : odrive_cmd_pub
+
+# clean rule for target.
+motor_description/CMakeFiles/odrive_cmd_pub.dir/clean:
+	$(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/clean
+.PHONY : motor_description/CMakeFiles/odrive_cmd_pub.dir/clean
+
+# clean rule for target.
+clean: motor_description/CMakeFiles/odrive_cmd_pub.dir/clean
 
 .PHONY : clean
 

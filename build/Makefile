@@ -441,6 +441,19 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named odrive_cmd_pub
+
+# Build rule for target.
+odrive_cmd_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 odrive_cmd_pub
+.PHONY : odrive_cmd_pub
+
+# fast build rule for target.
+odrive_cmd_pub/fast:
+	$(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/build
+.PHONY : odrive_cmd_pub/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_eus
 
 # Build rule for target.
@@ -539,6 +552,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... odrive_cmd_pub"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... joint_states_sub"
 	@echo "... roscpp_generate_messages_nodejs"

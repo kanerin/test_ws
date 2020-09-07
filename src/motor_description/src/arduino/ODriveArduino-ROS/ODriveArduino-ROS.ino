@@ -10,7 +10,6 @@ template<>        inline Print& operator <<(Print &obj, float arg) { obj.print(a
 ODriveArduino odrive(Serial2);
 
 
-
 /* ROS */
 #include <ros.h>
 #include <std_msgs/Int32MultiArray.h>
@@ -21,15 +20,18 @@ ODriveArduino odrive(Serial2);
 #include <std_msgs/Empty.h>
 #include <sensor_msgs/Joy.h>
 #include <ros/time.h>
-
 /******/
 
-void odrive_cb(const std_msgs::Int32& cmd_msg);
+#include <string.h>
+
+//void odrive_cb(const std_msgs::Int32& cmd_msg);
+void odrive_cb(const std_msgs::String& cmd_msg);
 
 
 /* ROS */
 ros::NodeHandle  nh;
-ros::Subscriber<std_msgs::Int32> odrivecmd_sub("odrive", odrive_cb);
+//ros::Subscriber<std_msgs::Int32> odrivecmd_sub("odrive", odrive_cb);
+ros::Subscriber<std_msgs::String> odrivecmd_sub("odrive", odrive_cb);
 
 std_msgs::Int32MultiArray position_data;
 ros::Publisher position_pub("position", &position_data);
@@ -62,7 +64,7 @@ void odrive_init(){
   nh.loginfo("Setting parameters...");
   int requested_state;
   char buf[50];
-  for (int axis = 0; axis < 2; ++axis) {
+  for (int axis = 1; axis < 2; ++axis) {
     Serial2 << "w axis" << axis << ".controller.config.vel_limit " << 22000.0f << '\n';
     Serial2 << "w axis" << axis << ".motor.config.current_lim " << 11.0f << '\n';
     // This ends up writing something like "w axis0.motor.config.current_lim 10.0\n"
@@ -108,10 +110,11 @@ float GetPosition(int axis){
   return position=(360*encoder_pos)/2000 ;
 }
 
-void odrive_cb(const std_msgs::Int32& cmd_msg){
-    
+void odrive_cb(const std_msgs::String& cmd_msg){
+  nh.loginfo(cmd_msg.data);
+
     // Sinusoidal test move
-    if (cmd_msg.data == 0) {
+    if (!strcmp(cmd_msg.data,"A")) {
       nh.loginfo("Executing test move");
       for (float ph = 0.0f; ph < 6.28318530718f; ph += 0.01f) {
         float pos_m0 = 20000.0f * cos(ph);
@@ -123,22 +126,19 @@ void odrive_cb(const std_msgs::Int32& cmd_msg){
     }
 
     // Read bus voltage
-    if (cmd_msg.data == 1) {
+    if (!strcmp(cmd_msg.data,"B")) {
       Serial2 << "r vbus_voltage\n";
       voltage_data.data=odrive.readFloat();
       voltage_pub.publish(&voltage_data);
     }
 
     // print motor positions in a 10s loop
-    if (cmd_msg.data == 2) {
-      static const unsigned long duration = 10000;
-      unsigned long start = millis();
-      while(millis() - start < duration) {
+    if (!strcmp(cmd_msg.data,"X")) {
         for (int motor = 0; motor < 2; ++motor) {
           Serial2 << "r axis" << motor << ".encoder.pos_estimate\n";
           position_data.data[motor] = odrive.readFloat();
         }
         position_pub.publish(&position_data);
-      }
+      
     }  
 }
