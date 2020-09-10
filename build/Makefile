@@ -337,6 +337,19 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named basic_twist_publisher
+
+# Build rule for target.
+basic_twist_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 basic_twist_publisher
+.PHONY : basic_twist_publisher
+
+# fast build rule for target.
+basic_twist_publisher/fast:
+	$(MAKE) -f motor_description/CMakeFiles/basic_twist_publisher.dir/build.make motor_description/CMakeFiles/basic_twist_publisher.dir/build
+.PHONY : basic_twist_publisher/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -387,6 +400,19 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 std_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named joy_array_pub
+
+# Build rule for target.
+joy_array_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 joy_array_pub
+.PHONY : joy_array_pub
+
+# fast build rule for target.
+joy_array_pub/fast:
+	$(MAKE) -f motor_description/CMakeFiles/joy_array_pub.dir/build.make motor_description/CMakeFiles/joy_array_pub.dir/build
+.PHONY : joy_array_pub/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -544,10 +570,12 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... basic_twist_publisher"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... joy_array_pub"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"

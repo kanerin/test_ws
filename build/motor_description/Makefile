@@ -228,6 +228,21 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+motor_description/CMakeFiles/basic_twist_publisher.dir/rule:
+	cd /home/shoma/test_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_description/CMakeFiles/basic_twist_publisher.dir/rule
+.PHONY : motor_description/CMakeFiles/basic_twist_publisher.dir/rule
+
+# Convenience name for target.
+basic_twist_publisher: motor_description/CMakeFiles/basic_twist_publisher.dir/rule
+
+.PHONY : basic_twist_publisher
+
+# fast build rule for target.
+basic_twist_publisher/fast:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/basic_twist_publisher.dir/build.make motor_description/CMakeFiles/basic_twist_publisher.dir/build
+.PHONY : basic_twist_publisher/fast
+
+# Convenience name for target.
 motor_description/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/shoma/test_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_description/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : motor_description/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -286,6 +301,21 @@ std_msgs_generate_messages_cpp: motor_description/CMakeFiles/std_msgs_generate_m
 std_msgs_generate_messages_cpp/fast:
 	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+motor_description/CMakeFiles/joy_array_pub.dir/rule:
+	cd /home/shoma/test_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_description/CMakeFiles/joy_array_pub.dir/rule
+.PHONY : motor_description/CMakeFiles/joy_array_pub.dir/rule
+
+# Convenience name for target.
+joy_array_pub: motor_description/CMakeFiles/joy_array_pub.dir/rule
+
+.PHONY : joy_array_pub
+
+# fast build rule for target.
+joy_array_pub/fast:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/joy_array_pub.dir/build.make motor_description/CMakeFiles/joy_array_pub.dir/build
+.PHONY : joy_array_pub/fast
 
 # Convenience name for target.
 motor_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
@@ -422,6 +452,33 @@ std_msgs_generate_messages_py/fast:
 	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_py.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/basic_twist_publisher.o: src/basic_twist_publisher.cpp.o
+
+.PHONY : src/basic_twist_publisher.o
+
+# target to build an object file
+src/basic_twist_publisher.cpp.o:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/basic_twist_publisher.dir/build.make motor_description/CMakeFiles/basic_twist_publisher.dir/src/basic_twist_publisher.cpp.o
+.PHONY : src/basic_twist_publisher.cpp.o
+
+src/basic_twist_publisher.i: src/basic_twist_publisher.cpp.i
+
+.PHONY : src/basic_twist_publisher.i
+
+# target to preprocess a source file
+src/basic_twist_publisher.cpp.i:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/basic_twist_publisher.dir/build.make motor_description/CMakeFiles/basic_twist_publisher.dir/src/basic_twist_publisher.cpp.i
+.PHONY : src/basic_twist_publisher.cpp.i
+
+src/basic_twist_publisher.s: src/basic_twist_publisher.cpp.s
+
+.PHONY : src/basic_twist_publisher.s
+
+# target to generate assembly for a file
+src/basic_twist_publisher.cpp.s:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/basic_twist_publisher.dir/build.make motor_description/CMakeFiles/basic_twist_publisher.dir/src/basic_twist_publisher.cpp.s
+.PHONY : src/basic_twist_publisher.cpp.s
+
 src/joint_states_subscriber.o: src/joint_states_subscriber.cpp.o
 
 .PHONY : src/joint_states_subscriber.o
@@ -448,6 +505,33 @@ src/joint_states_subscriber.s: src/joint_states_subscriber.cpp.s
 src/joint_states_subscriber.cpp.s:
 	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/joint_states_sub.dir/build.make motor_description/CMakeFiles/joint_states_sub.dir/src/joint_states_subscriber.cpp.s
 .PHONY : src/joint_states_subscriber.cpp.s
+
+src/joy_array.o: src/joy_array.cpp.o
+
+.PHONY : src/joy_array.o
+
+# target to build an object file
+src/joy_array.cpp.o:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/joy_array_pub.dir/build.make motor_description/CMakeFiles/joy_array_pub.dir/src/joy_array.cpp.o
+.PHONY : src/joy_array.cpp.o
+
+src/joy_array.i: src/joy_array.cpp.i
+
+.PHONY : src/joy_array.i
+
+# target to preprocess a source file
+src/joy_array.cpp.i:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/joy_array_pub.dir/build.make motor_description/CMakeFiles/joy_array_pub.dir/src/joy_array.cpp.i
+.PHONY : src/joy_array.cpp.i
+
+src/joy_array.s: src/joy_array.cpp.s
+
+.PHONY : src/joy_array.s
+
+# target to generate assembly for a file
+src/joy_array.cpp.s:
+	cd /home/shoma/test_ws/build && $(MAKE) -f motor_description/CMakeFiles/joy_array_pub.dir/build.make motor_description/CMakeFiles/joy_array_pub.dir/src/joy_array.cpp.s
+.PHONY : src/joy_array.cpp.s
 
 src/odrive_cmd_pub.o: src/odrive_cmd_pub.cpp.o
 
@@ -492,11 +576,13 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... basic_twist_publisher"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... joy_array_pub"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
@@ -506,9 +592,15 @@ help:
 	@echo "... joint_states_sub"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... src/basic_twist_publisher.o"
+	@echo "... src/basic_twist_publisher.i"
+	@echo "... src/basic_twist_publisher.s"
 	@echo "... src/joint_states_subscriber.o"
 	@echo "... src/joint_states_subscriber.i"
 	@echo "... src/joint_states_subscriber.s"
+	@echo "... src/joy_array.o"
+	@echo "... src/joy_array.i"
+	@echo "... src/joy_array.s"
 	@echo "... src/odrive_cmd_pub.o"
 	@echo "... src/odrive_cmd_pub.i"
 	@echo "... src/odrive_cmd_pub.s"

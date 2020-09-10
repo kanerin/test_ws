@@ -136,6 +136,8 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/motor_description_node.cpp)
 add_executable(joint_states_sub src/joint_states_subscriber.cpp)
 add_executable(odrive_cmd_pub src/odrive_cmd_pub.cpp)
+add_executable(joy_array_pub src/joy_array.cpp)
+add_executable(basic_twist_publisher src/basic_twist_publisher.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -153,7 +155,8 @@ add_executable(odrive_cmd_pub src/odrive_cmd_pub.cpp)
 # )
 target_link_libraries(joint_states_sub  ${catkin_LIBRARIES} )
 target_link_libraries(odrive_cmd_pub ${catkin_LIBRARIES} )
-
+target_link_libraries(joy_array_pub ${catkin_LIBRARIES} )
+target_link_libraries(basic_twist_publisher  ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############
