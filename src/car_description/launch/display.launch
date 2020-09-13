@@ -1,5 +1,5 @@
 <launch>
-	<arg name="model" />
+	<arg name="model" default="$(find car_description)/urdf/car.urdf"/>
 	<arg name="gui" default="True" />
 
 	<param name="robot_description" textfile="$(arg model)" />
