@@ -285,238 +285,17 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
+# Target rules for targets named motor_control_genpy
 
 # Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
+motor_control_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_genpy
+.PHONY : motor_control_genpy
 
 # fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f motor_description/CMakeFiles/roscpp_generate_messages_py.dir/build.make motor_description/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
-
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f motor_description/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make motor_description/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f motor_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make motor_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named basic_twist_publisher
-
-# Build rule for target.
-basic_twist_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 basic_twist_publisher
-.PHONY : basic_twist_publisher
-
-# fast build rule for target.
-basic_twist_publisher/fast:
-	$(MAKE) -f motor_description/CMakeFiles/basic_twist_publisher.dir/build.make motor_description/CMakeFiles/basic_twist_publisher.dir/build
-.PHONY : basic_twist_publisher/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f motor_description/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make motor_description/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f motor_description/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make motor_description/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f motor_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make motor_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
-
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named joy_array_pub
-
-# Build rule for target.
-joy_array_pub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 joy_array_pub
-.PHONY : joy_array_pub
-
-# fast build rule for target.
-joy_array_pub/fast:
-	$(MAKE) -f motor_description/CMakeFiles/joy_array_pub.dir/build.make motor_description/CMakeFiles/joy_array_pub.dir/build
-.PHONY : joy_array_pub/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f motor_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make motor_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f motor_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make motor_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
-
-# Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_nodejs
-
-# Build rule for target.
-std_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named odrive_cmd_pub
-
-# Build rule for target.
-odrive_cmd_pub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 odrive_cmd_pub
-.PHONY : odrive_cmd_pub
-
-# fast build rule for target.
-odrive_cmd_pub/fast:
-	$(MAKE) -f motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_description/CMakeFiles/odrive_cmd_pub.dir/build
-.PHONY : odrive_cmd_pub/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_eus
-
-# Build rule for target.
-roscpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	$(MAKE) -f motor_description/CMakeFiles/roscpp_generate_messages_eus.dir/build.make motor_description/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named joint_states_sub
-
-# Build rule for target.
-joint_states_sub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 joint_states_sub
-.PHONY : joint_states_sub
-
-# fast build rule for target.
-joint_states_sub/fast:
-	$(MAKE) -f motor_description/CMakeFiles/joint_states_sub.dir/build.make motor_description/CMakeFiles/joint_states_sub.dir/build
-.PHONY : joint_states_sub/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_nodejs
-
-# Build rule for target.
-roscpp_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f motor_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make motor_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
+motor_control_genpy/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_genpy.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_genpy.dir/build
+.PHONY : motor_control_genpy/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -528,8 +307,528 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f motor_description/CMakeFiles/std_msgs_generate_messages_py.dir/build.make motor_description/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_py.dir/build.make motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_generate_messages_lisp
+
+# Build rule for target.
+motor_control_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_generate_messages_lisp
+.PHONY : motor_control_generate_messages_lisp
+
+# fast build rule for target.
+motor_control_generate_messages_lisp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_generate_messages_lisp.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_generate_messages_lisp.dir/build
+.PHONY : motor_control_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make motor_package/motor_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_py
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_py
+.PHONY : controller_manager_msgs_generate_messages_py
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_py/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+.PHONY : controller_manager_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make motor_package/motor_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_eus
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_eus
+.PHONY : controller_manager_msgs_generate_messages_eus
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_eus/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+.PHONY : controller_manager_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make motor_package/motor_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_lisp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_lisp
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make motor_package/motor_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named robot_hardware_interface
+
+# Build rule for target.
+robot_hardware_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_hardware_interface
+.PHONY : robot_hardware_interface
+
+# fast build rule for target.
+robot_hardware_interface/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/robot_hardware_interface.dir/build.make motor_package/motor_control/CMakeFiles/robot_hardware_interface.dir/build
+.PHONY : robot_hardware_interface/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make motor_package/motor_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/roscpp_generate_messages_eus.dir/build.make motor_package/motor_control/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_generate_messages_eus
+
+# Build rule for target.
+motor_control_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_generate_messages_eus
+.PHONY : motor_control_generate_messages_eus
+
+# fast build rule for target.
+motor_control_generate_messages_eus/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_generate_messages_eus.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_generate_messages_eus.dir/build
+.PHONY : motor_control_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_genlisp
+
+# Build rule for target.
+motor_control_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_genlisp
+.PHONY : motor_control_genlisp
+
+# fast build rule for target.
+motor_control_genlisp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_genlisp.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_genlisp.dir/build
+.PHONY : motor_control_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_cpp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_cpp
+.PHONY : controller_manager_msgs_generate_messages_cpp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_nodejs
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_nodejs
+.PHONY : controller_manager_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make motor_package/motor_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_nodejs
+
+# Build rule for target.
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_py.dir/build.make motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_generate_messages_cpp
+
+# Build rule for target.
+motor_control_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_generate_messages_cpp
+.PHONY : motor_control_generate_messages_cpp
+
+# fast build rule for target.
+motor_control_generate_messages_cpp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_generate_messages_cpp.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_generate_messages_cpp.dir/build
+.PHONY : motor_control_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_generate_messages
+
+# Build rule for target.
+motor_control_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_generate_messages
+.PHONY : motor_control_generate_messages
+
+# fast build rule for target.
+motor_control_generate_messages/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_generate_messages.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_generate_messages.dir/build
+.PHONY : motor_control_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make motor_package/motor_control/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_gencpp
+
+# Build rule for target.
+motor_control_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_gencpp
+.PHONY : motor_control_gencpp
+
+# fast build rule for target.
+motor_control_gencpp/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_gencpp.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_gencpp.dir/build
+.PHONY : motor_control_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/roscpp_generate_messages_py.dir/build.make motor_package/motor_control/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _motor_control_generate_messages_check_deps_Floats_array
+
+# Build rule for target.
+_motor_control_generate_messages_check_deps_Floats_array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _motor_control_generate_messages_check_deps_Floats_array
+.PHONY : _motor_control_generate_messages_check_deps_Floats_array
+
+# fast build rule for target.
+_motor_control_generate_messages_check_deps_Floats_array/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/_motor_control_generate_messages_check_deps_Floats_array.dir/build.make motor_package/motor_control/CMakeFiles/_motor_control_generate_messages_check_deps_Floats_array.dir/build
+.PHONY : _motor_control_generate_messages_check_deps_Floats_array/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_geneus
+
+# Build rule for target.
+motor_control_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_geneus
+.PHONY : motor_control_geneus
+
+# fast build rule for target.
+motor_control_geneus/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_geneus.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_geneus.dir/build
+.PHONY : motor_control_geneus/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_generate_messages_nodejs
+
+# Build rule for target.
+motor_control_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_generate_messages_nodejs
+.PHONY : motor_control_generate_messages_nodejs
+
+# fast build rule for target.
+motor_control_generate_messages_nodejs/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_generate_messages_nodejs.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_generate_messages_nodejs.dir/build
+.PHONY : motor_control_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_gennodejs
+
+# Build rule for target.
+motor_control_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_gennodejs
+.PHONY : motor_control_gennodejs
+
+# fast build rule for target.
+motor_control_gennodejs/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_gennodejs.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_gennodejs.dir/build
+.PHONY : motor_control_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named motor_control_generate_messages_py
+
+# Build rule for target.
+motor_control_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_control_generate_messages_py
+.PHONY : motor_control_generate_messages_py
+
+# fast build rule for target.
+motor_control_generate_messages_py/fast:
+	$(MAKE) -f motor_package/motor_control/CMakeFiles/motor_control_generate_messages_py.dir/build.make motor_package/motor_control/CMakeFiles/motor_control_generate_messages_py.dir/build
+.PHONY : motor_control_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named odrive_cmd_pub
+
+# Build rule for target.
+odrive_cmd_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 odrive_cmd_pub
+.PHONY : odrive_cmd_pub
+
+# fast build rule for target.
+odrive_cmd_pub/fast:
+	$(MAKE) -f motor_package/motor_description/CMakeFiles/odrive_cmd_pub.dir/build.make motor_package/motor_description/CMakeFiles/odrive_cmd_pub.dir/build
+.PHONY : odrive_cmd_pub/fast
+
+#=============================================================================
+# Target rules for targets named joint_states_sub
+
+# Build rule for target.
+joint_states_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 joint_states_sub
+.PHONY : joint_states_sub
+
+# fast build rule for target.
+joint_states_sub/fast:
+	$(MAKE) -f motor_package/motor_description/CMakeFiles/joint_states_sub.dir/build.make motor_package/motor_description/CMakeFiles/joint_states_sub.dir/build
+.PHONY : joint_states_sub/fast
+
+#=============================================================================
+# Target rules for targets named basic_twist_publisher
+
+# Build rule for target.
+basic_twist_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 basic_twist_publisher
+.PHONY : basic_twist_publisher
+
+# fast build rule for target.
+basic_twist_publisher/fast:
+	$(MAKE) -f motor_package/motor_description/CMakeFiles/basic_twist_publisher.dir/build.make motor_package/motor_description/CMakeFiles/basic_twist_publisher.dir/build
+.PHONY : basic_twist_publisher/fast
+
+#=============================================================================
+# Target rules for targets named joy_array_pub
+
+# Build rule for target.
+joy_array_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 joy_array_pub
+.PHONY : joy_array_pub
+
+# fast build rule for target.
+joy_array_pub/fast:
+	$(MAKE) -f motor_package/motor_description/CMakeFiles/joy_array_pub.dir/build.make motor_package/motor_description/CMakeFiles/joy_array_pub.dir/build
+.PHONY : joy_array_pub/fast
 
 #=============================================================================
 # Target rules for targets named _catkin_empty_exported_target
@@ -566,25 +865,48 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... basic_twist_publisher"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... joy_array_pub"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... odrive_cmd_pub"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... joint_states_sub"
-	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... motor_control_genpy"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... motor_control_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... robot_hardware_interface"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... motor_control_generate_messages_eus"
+	@echo "... motor_control_genlisp"
+	@echo "... controller_manager_msgs_generate_messages_cpp"
+	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... motor_control_generate_messages_cpp"
+	@echo "... motor_control_generate_messages"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... motor_control_gencpp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... _motor_control_generate_messages_check_deps_Floats_array"
+	@echo "... motor_control_geneus"
+	@echo "... motor_control_generate_messages_nodejs"
+	@echo "... motor_control_gennodejs"
+	@echo "... motor_control_generate_messages_py"
+	@echo "... odrive_cmd_pub"
+	@echo "... joint_states_sub"
+	@echo "... basic_twist_publisher"
+	@echo "... joy_array_pub"
 	@echo "... _catkin_empty_exported_target"
 .PHONY : help
 
